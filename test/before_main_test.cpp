@@ -6,14 +6,24 @@
 
 void say_whatup()
 {
-    std::cout << "WHATUPPPP" << std::endl;
+    static int count = 0;
+    std::cout << "WHATUPPPP " << count << std::endl;
 }
 
 
-BEFORE_MAIN(first,say_whatup);
+//BEFORE_MAIN(say_whatup);
+//BEFORE_MAIN(say_whatup);
+//BEFORE_MAIN(say_whatup);
+//BEFORE_MAIN(say_whatup);
+//BEFORE_MAIN(say_whatup);
+
+
 
 int main()
 {
     std::cout << "Actual main" << std::endl;
+    std::cout << FILENAME <<  std::endl;
+    std::cout << UNIQUE_NAME << std::endl;
+
     return 0;
 }
