@@ -9,5 +9,5 @@ struct BeforeMain {
     BeforeMain(std::function<void()> funk) {funk();}
 };
 
-#define BEFORE_MAIN(funk)   CHECK_TOP_LEVEL; static BeforeMain UNIQUE_NAME (funk);
+#define BEFORE_MAIN(funk)   CHECK_TOP_LEVEL; static BeforeMain UNIQUE_NAME (funk)
  
