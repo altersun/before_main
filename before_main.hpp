@@ -4,11 +4,6 @@
 #include "top_level.hpp"
 #include "unique_name.hpp"
 
-/*
-struct BeforeMain {
-    BeforeMain(std::function<void()> funk) {funk();}
-};
-*/
 
 struct BeforeMain {
     BeforeMain(std::function<void()> func) {func();}

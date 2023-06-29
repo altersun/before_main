@@ -17,7 +17,7 @@ $(EXE): $(OBJS) $(LIB)
 	@echo
 
 clean:
-	@rm -rf ./*.o* 
+	@rm -rf ./*.o* ./*.exe
 	@echo "All clean!"
 
 outputs:
